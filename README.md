@@ -1,3 +1,6 @@
+Hi! This is the source code to my personal portfolio located at https://benreitman.me ! 
+Go check it out to learn more about me and what I have done! 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
