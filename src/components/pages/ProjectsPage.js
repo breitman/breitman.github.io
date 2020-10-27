@@ -18,6 +18,11 @@ let projects = [
     href: 'https://github.com/Capstone-mARio/ARcity',
     goTo: 'Go to Github'
   },
+  { //BLANK PROJECT MODEL
+    name: 'Tab-U-Later',
+    description: 'A Google Chrome extension that manages your tab sessions. With this tool, one can save Chrome windows to go back to at some other point in time.',
+    goTo: 'Go to Github'
+  },
   { //GET A TM supertext on STAR WARS
     name: 'StarShips',
     description:
@@ -51,11 +56,7 @@ let projects = [
     goTo: 'Go to Github',
     disable: true
   },
-  { //BLANK PROJECT MODEL
-    name: 'Tab-U-Later',
-    description: 'A Google Chrome extension that manages your tab sessions. With this tool, one can save Chrome windows to go back to at some other point in time.',
-    goTo: 'Go to Github'
-  },
+  
 ]
 
 let count = 1;

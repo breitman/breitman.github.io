@@ -28,7 +28,7 @@ const Slide = styled.div`
     padding-right: 100px;
     position: relative;
     overflow-x: hidden;
-    animation: ${move} 10s linear infinite;
+    animation: ${move} 15s linear infinite;
 ` 
 
 export default function Slider(props) {
