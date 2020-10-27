@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from 'react'
-
 import img from './linked-in-profile.jpg'
 
 import styled from 'styled-components'
@@ -52,6 +51,7 @@ let Image = styled.img`
 export default function AboutMePage() {
 
   const [isVisible, setVisible] = useState(true);
+  
   const domRef = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {

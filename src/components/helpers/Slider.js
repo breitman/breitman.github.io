@@ -6,8 +6,14 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    padding-top: 40vh;
     align-self: flex-end;
+
+    @media screen and (min-height: 750px){
+        padding-top: 40%;
+    }
+    @media screen and (max-height: 751px){
+        padding-top: 30%;
+    }
 `
 
 const move = keyframes`
