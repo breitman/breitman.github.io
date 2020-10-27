@@ -29,7 +29,9 @@ const App = () => {
   const [isLoaded, setLoaded] = useState(false);
 
   useEffect(()=>{
-    setLoaded(true);
+    setTimeout(() => {
+      setLoaded(true);
+    }, 2000);
   }, [isLoaded])
 
   return (
