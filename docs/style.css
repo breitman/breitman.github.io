@@ -85,50 +85,10 @@ form div {
   vertical-align: middle;
 }
 
-.about-container{
-  height: 30px !important; 
-}
-
 #aboutme{
   margin-top: 300px;
   margin-bottom: 100px;
 }
-
-/* If the screen size is 1001px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 1001px) {
-  .about {
-    padding-top: 30%;
-    vertical-align: middle;
-    font-size: 25px;
-  width: 100%;
-  }
-  .about-image {
-    margin: 0% 20% 0% 20%;
-    max-width: 400px;
-    max-height: 670px;
-    height: auto;
-    width: auto;
-  }
-}
-
-/* If the screen size is 1000px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 1000px) {
-  .about {
-    padding-top: 40%;
-    padding-bottom: 15.3%;
-    vertical-align: middle;
-    font-size: 18px;
-    width: 100%;
-  }
-  .about-image {
-    margin: 20%;
-    max-width: 270px;
-    max-height: 400px;
-    height: auto;
-    width: auto;
-  }
-}
-
 
 .projects {
   padding: 5.8%;
