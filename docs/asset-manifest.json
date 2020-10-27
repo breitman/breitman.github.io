@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.js": "/breitman.github.io/static/js/main.f6f03872.chunk.js",
+    "main.js.map": "/breitman.github.io/static/js/main.f6f03872.chunk.js.map",
+    "runtime-main.js": "/breitman.github.io/static/js/runtime-main.ae7f9fb7.js",
+    "runtime-main.js.map": "/breitman.github.io/static/js/runtime-main.ae7f9fb7.js.map",
+    "static/css/2.2a86faee.chunk.css": "/breitman.github.io/static/css/2.2a86faee.chunk.css",
+    "static/js/2.84f932ce.chunk.js": "/breitman.github.io/static/js/2.84f932ce.chunk.js",
+    "static/js/2.84f932ce.chunk.js.map": "/breitman.github.io/static/js/2.84f932ce.chunk.js.map",
+    "index.html": "/breitman.github.io/index.html",
+    "precache-manifest.029d3e0955d3dca7c5ba999d5fa471e5.js": "/breitman.github.io/precache-manifest.029d3e0955d3dca7c5ba999d5fa471e5.js",
+    "service-worker.js": "/breitman.github.io/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/breitman.github.io/static/css/2.2a86faee.chunk.css.map",
+    "static/js/2.84f932ce.chunk.js.LICENSE.txt": "/breitman.github.io/static/js/2.84f932ce.chunk.js.LICENSE.txt",
+    "static/media/css3.svg": "/breitman.github.io/static/media/css3.3707da3c.svg",
+    "static/media/firebase-1.svg": "/breitman.github.io/static/media/firebase-1.7f8d489c.svg",
+    "static/media/git.svg": "/breitman.github.io/static/media/git.43d302c6.svg",
+    "static/media/graphql.svg": "/breitman.github.io/static/media/graphql.6270a2d4.svg",
+    "static/media/html-5.svg": "/breitman.github.io/static/media/html-5.676e8188.svg",
+    "static/media/java-4.svg": "/breitman.github.io/static/media/java-4.bcfad0f2.svg",
+    "static/media/javascript.svg": "/breitman.github.io/static/media/javascript.61ed8b05.svg",
+    "static/media/jest-0.svg": "/breitman.github.io/static/media/jest-0.ea9cdc83.svg",
+    "static/media/linked-in-profile.f408ca8f.jpg": "/breitman.github.io/static/media/linked-in-profile.f408ca8f.jpg",
+    "static/media/nodejs-1.svg": "/breitman.github.io/static/media/nodejs-1.a1231528.svg",
+    "static/media/postgresql.svg": "/breitman.github.io/static/media/postgresql.d7c985e7.svg",
+    "static/media/python-5.svg": "/breitman.github.io/static/media/python-5.146716bd.svg",
+    "static/media/react.svg": "/breitman.github.io/static/media/react.4009eef3.svg",
+    "static/media/redux.svg": "/breitman.github.io/static/media/redux.aa0a3376.svg",
+    "static/media/typescript.svg": "/breitman.github.io/static/media/typescript.3de182d2.svg",
+    "static/media/unity-69.svg": "/breitman.github.io/static/media/unity-69.c01d1638.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae7f9fb7.js",
+    "static/css/2.2a86faee.chunk.css",
+    "static/js/2.84f932ce.chunk.js",
+    "static/js/main.f6f03872.chunk.js"
+  ]
+}
