@@ -8,7 +8,6 @@ let Container = styled.div`
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  padding-bottom: 200px;
 `
 
 let Text = styled.p`

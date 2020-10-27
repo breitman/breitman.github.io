@@ -44,7 +44,7 @@ class NavBar extends Component {
             <NavLink //TODO: change this so that scrolls into correct view
               to="/#projects"
               scroll={el =>{
-                this.scrollWithOffset(el, 300)
+                this.scrollWithOffset(el, -50)
               }}
             >
               Projects
