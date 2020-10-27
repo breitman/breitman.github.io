@@ -9,10 +9,10 @@ const Container = styled.div`
     align-self: flex-end;
 
     @media screen and (min-height: 750px){
-        padding-top: 40%;
+        padding-top: 35vh;
     }
     @media screen and (max-height: 751px){
-        padding-top: 30%;
+        padding-top: 30vh;
     }
 `
 
