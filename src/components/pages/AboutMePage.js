@@ -5,18 +5,19 @@ import styled from 'styled-components'
 
 
 let Container = styled.div`
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-
+  padding-bottom: 200px;
 `
 
 let Text = styled.p`
   margin: 10%;
   vertical-align: middle;
-  @media screen and (max-width: 1000px) {
-    font-size: 18px;
+  @media screen and (max-width: 1200px) {
+    font-size: 19px;
   }
-  @media screen and (min-width: 1001px) {
+  @media screen and (min-width: 1201px) {
     font-size: 25px;
   }
   opacity: 0;
@@ -37,13 +38,13 @@ let Image = styled.img`
   height: auto;
   width: auto;
   right: auto;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     max-width: 270px;
     max-height: 400px;
   }
-  @media screen and (min-width: 1001px) {
-    max-width: 400px;
-    max-height: 670px;
+  @media screen and (min-width: 1201px) {
+    max-width: 350px;
+    max-height: 650px;
   }
   
 `
@@ -73,7 +74,6 @@ export default function AboutMePage() {
           Fullstack Academy of Code!
         </Text>
       <Image src={img} />
-
     </Container>
   )
 }

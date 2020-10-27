@@ -36,7 +36,7 @@ class NavBar extends Component {
             <NavLink
               to="/#aboutme"
               scroll={el =>{
-                this.scrollWithOffset(el, 200)
+                this.scrollWithOffset(el, 100)
               }}
             >
               About Me
@@ -44,7 +44,7 @@ class NavBar extends Component {
             <NavLink //TODO: change this so that scrolls into correct view
               to="/#projects"
               scroll={el =>{
-                this.scrollWithOffset(el, -50)
+                this.scrollWithOffset(el, 300)
               }}
             >
               Projects
