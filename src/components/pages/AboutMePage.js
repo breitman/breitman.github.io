@@ -1,10 +1,53 @@
 import React, { useRef, useState, useEffect } from 'react'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
 import img from './linked-in-profile.jpg'
+
+import styled from 'styled-components'
+
+
+let Container = styled.div`
+  display: flex;
+  align-items: center;
+
+`
+
+let Text = styled.p`
+  margin: 10%;
+  vertical-align: middle;
+  @media screen and (max-width: 1000px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1001px) {
+    font-size: 25px;
+  }
+  opacity: 0;
+  transform: translateY(30vh);
+  visibility: hidden;
+  transition: opacity 3s ease-in, transform 2s ease-out;
+  will-change: opacity, visibility;
+
+  &.is-visible{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+`
+
+let Image = styled.img`
+  margin-right: 10%;
+  height: auto;
+  width: auto;
+  right: auto;
+  @media screen and (max-width: 1000px) {
+    max-width: 270px;
+    max-height: 400px;
+  }
+  @media screen and (min-width: 1001px) {
+    max-width: 400px;
+    max-height: 670px;
+  }
+  
+`
 
 export default function AboutMePage() {
 
@@ -20,22 +63,17 @@ export default function AboutMePage() {
 
   return (
     <Container id="aboutme">
-      <Row>
-        <Col className='about-container'>
-          <p className={` about fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={domRef}>
-            I was born and raised in Palm Beach Gardens, Florida.
-            During my Sophomore year of High School, I became extremely
-            interested in programming after enrolling in my first Computer
-            Science class. I recently graduated from the University of
-            Wisconsin-Madison with a BS degree in Computer Science and a
-            Certificate in Entrepreneurship. I am also a graduate of the
-            Fullstack Academy of Code!
-            </p>
-        </Col>
-        <Col>
-          <img className="about-image" src={img} />
-        </Col>
-      </Row>
+        <Text className={isVisible ? 'is-visible' : ''}ref={domRef}>
+          I was born and raised in Palm Beach Gardens, Florida.
+          During my Sophomore year of High School, I became extremely
+          interested in programming after enrolling in my first Computer
+          Science class. I recently graduated from the University of
+          Wisconsin-Madison with a BS degree in Computer Science and a
+          Certificate in Entrepreneurship. I am also a graduate of the
+          Fullstack Academy of Code!
+        </Text>
+      <Image src={img} />
+
     </Container>
   )
 }

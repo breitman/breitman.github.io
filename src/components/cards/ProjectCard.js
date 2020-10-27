@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 // import Card from 'react-bootstrap/Card'
 import styled from 'styled-components'
-import {Frame} from 'framer'
+import { Grow } from '@material-ui/core'
 
 let Card = styled.div`
     width: 350px;
@@ -15,7 +15,7 @@ let Card = styled.div`
     box-shadow: 0  5px 10px rgba(0,0,0,1), 0 15px 40px rgba(0,0,0,1);
   `
 
-  let Header = styled.h3`
+let Header = styled.h3`
     margin-top: 30px;
     margin-left: 10px;
     display: flex;
@@ -23,13 +23,13 @@ let Card = styled.div`
     color: white;
   `
 
-  let Body = styled.p`
+let Body = styled.p`
     display: flex;
     // align-items: center;
     margin-left: 5%;
   `
 
-  let Link = styled.a`
+let Link = styled.a`
     background-color: #BB86FC;
     display:flex;
     border-radius:2em;
@@ -62,14 +62,26 @@ let Card = styled.div`
   `
 
 export default function ProjectCard(props) {
+  const [isVisible, setVisible] = useState(true);
+  const domRef = useRef();
 
   const project = props.project
 
-  return(
-    <Card>
-      <Header>{project.name}</Header>
-      <Body>{project.description}</Body>
-      <Link className={project.disable ? 'disabled' : ''} href={project.href}>{project.goTo}</Link>
-    </Card>
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+
+  return (
+    <Grow in={isVisible} timeout={2000} ref={domRef}>
+      <Card>
+        <Header>{project.name}</Header>
+        <Body>{project.description}</Body>
+        <Link className={project.disable ? 'disabled' : ''} href={project.href}>{project.goTo}</Link>
+      </Card>
+    </Grow>
   )
 }

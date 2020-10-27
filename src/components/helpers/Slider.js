@@ -6,7 +6,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    padding-top: 350px;
+    padding-top: 40vh;
     align-self: flex-end;
 `
 
@@ -30,7 +30,7 @@ export default function Slider(props) {
     return (
         <Container>
             {props.slides.map((slide) => (
-                <Slide>
+                <Slide key={`slide-${count++}`}>
                     {slide}
                 </Slide>
 
